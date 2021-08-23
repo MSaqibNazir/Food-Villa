@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <!-- =========================================================================== -->
+
+
+    <!-- ---------------FIREBASE---------------  -->
+    <!-- ======================================== -->
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDNK0PRQMYyYiVJFElaTgEQftF3IMtbBjI",
+            authDomain: "food-villa-real.firebaseapp.com",
+            projectId: "food-villa-real",
+            storageBucket: "food-villa-real.appspot.com",
+            messagingSenderId: "398181221759",
+            appId: "1:398181221759:web:d99ad8a5917cf3afc5864a",
+            measurementId: "G-XPN82HB3ZQ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <!-- =========================================================================== -->
+
+
+    <!-- ---------------BOOTSTRAP---------------  -->
+    <!-- ======================================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- =========================================================================== -->
+
+
+    <!-- ---------------Own CSS---------------  -->
+    <link rel="stylesheet" href="Style.css">
+
+
+    <!-- =========================================================================== -->
+
+</head>
+
+
+<body>
+
+    <!-- BACKGROUNG IMAGE. -->
+    <div class="backgroung-image">
+        <img src="assets/images/topbg.jpg" alt="topbg" class="bkg-image">
+    </div>
+
+    <!-- central container for logo and slogan  -->
+    <div class="centre-container container">
+        <img class="fv-logo" src="assets/images/food villa logo.png" alt="">
+        <br />
+
+        <h2 class="sloganp" itemprop="headline">Order <span>Food Online From</span> the
+            <br>Best Restaurants
+        </h2>
+    </div>
+<p class="spcl-para">
+    To create account click on the below button
+</p>
+    <!-- Buttons -->
+    <div class="bttns-cont container-fluid">
+
+        <button onclick="regRestaurant()" type="button" class="regbtn btn btn-outline-warning btn-lg">REGISTER
+            RESTAURANT</button>
+        <button onclick="regUser()" type="button" class="logbtn btn btn-outline-warning btn-lg">LOGIN/REGISTER</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
